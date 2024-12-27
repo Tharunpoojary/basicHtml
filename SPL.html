@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHANKARANARAYANA TROPHY</title>
+
+</head>
+<body>
+    <head>
+        <h1>SHANKARANARAYANA PREMIER LEAGUE-2025</h1>
+        <h3>Register Here</h3>
+    </head>
+    <main>
+        <form action="/spl.txt" onsubmit="return validate()">
+            NAME:<input type="text"placeholder="Enter Your Name" id="name"><br><br>
+            AGE:<input type="number"placeholder="Enter Your Age" id="age"><br><br>
+            Ph No:<input type="number"placeholder="Enter Your Phone Number" id="Ph"><br><br>
+            Email iD:<input type="email"placeholder="Enter Your EmailId" id="eId"><br><br>
+            <label for="Role1">
+                Role:
+                <br>
+                 <input type="checkbox"id="101" name="Role">All-Rounder
+            </label>
+            <br>
+            <label for="Role2">
+                <input type="checkbox"id="102" name="Role">Batsman
+            </label>
+            <br>
+            <label for="Role3">
+                <input type="checkbox"id="103" name="Role">Bowler
+            </label>
+            <br>
+            <br><br>
+            Area:
+            <label for="Area1">
+                <select name="Area" id="576" class="Area">
+                    <option value="Handadi" id="A1">Handadi</option>
+                    <option value="Kumragodu" id="A2">Kumragodu</option>
+                    <option value="Beloorjeddu" id="A3">Beloorjeddu</option>
+                    <option value="Mulljedd" id="A4">Mulljedd</option>
+                    <option value="Katte" id="A5">Handadi</option>
+                    
+                </select>
+                
+            </label>
+            <br><br>
+
+            T shirt Size: <br><br>
+            <label for="s1">
+                <input type="radio"value="s"name="shirt" id="s">S <br>
+            </label>
+            <label for="s2">
+                <input type="radio"value="m"name="shirt" id="m">M <br>
+                
+            </label>
+            <label for="s3">
+                <input type="radio"value="l"name="shirt" id="l">L <br>
+            </label>
+            <label for="s4">
+                <input type="radio"value="xl"name="shirt" id="xl">XL <br>
+            </label>
+            <label for="s5">
+                <input type="radio"value="xxl"name="shirt" id="xxl">XXl <br>
+            </label>
+
+            <br><br>
+            <textarea name="Feedback" id="Fb"placeholder="Enter Your feedback here" rows="5">Feedback</textarea>
+             <br><br><input type="submit" value="submit">
+
+        
+                
+                
+        </form>
+
+    </main>
+    <footer>
+        <h1>Contact:TharunPoojary Ph No:7022794427</h1>
+    </footer>
+    <script>
+        function validate()
+        { 
+            a=document.getElementById("name").value;
+            b=document.getElementById("age").value;
+            c=document.getElementById("Ph").value;
+            d=document.getElementById("eId").value;
+            e=document.getElementById("Fb").value  ;
+
+            if(a==""||b==""||c==""||d==""||e=="")
+            {
+            alert("Every Field is Mandatory")
+            return false
+             }
+            else if(c.length!=10)
+            {
+               alert("Enter valid Phone Number")
+               return false
+            }
+            else
+            return true
+                
+
+        }
+
+            
+        
+    </script>
+    
+</body>
+</html>
